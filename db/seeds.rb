@@ -8,7 +8,12 @@
 #
 
 customer_names = ['Matt', 'John', 'Winny', 'Mary', 'Tex']
-customer_names.each do |name|
-  Customer.create(name: name)
+14.times do |name|
+  Customer.create({name: Faker::Name.name})
+  Address.create({
+    street: Faker::Address.street_address,
+    city: Faker::Address.city,
+    state: Faker::Address.state,
+    zip_code: Faker::Address.zip
+  })
 end
-
