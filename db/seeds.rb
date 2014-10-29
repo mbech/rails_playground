@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+
+customer_names = ['Matt', 'John', 'Winny', 'Mary', 'Tex']
+customer_names.each do |name|
+  Customer.create(name: name)
+end
+
