@@ -9,7 +9,7 @@
 
 customer_names = ['Matt', 'John', 'Winny', 'Mary', 'Tex']
 14.times do |name|
-  Customer.create({name: Faker::Name.name})
+  customer = Customer.create({name: Faker::Name.name})
   Address.create({
     street: Faker::Address.street_address,
     city: Faker::Address.city,
