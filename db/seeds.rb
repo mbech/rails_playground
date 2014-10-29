@@ -16,4 +16,5 @@ customer_names = ['Matt', 'John', 'Winny', 'Mary', 'Tex']
     state: Faker::Address.state,
     zip_code: Faker::Address.zip
   })
+  3.times {customer.invoices.create()}
 end
