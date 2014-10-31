@@ -7,7 +7,6 @@ class Invoice < ActiveRecord::Base
     :city,
     :state,
     :zip_code,
-    :to => :customer,
-    :prefix => true
+    :to => :customer
 
 end
